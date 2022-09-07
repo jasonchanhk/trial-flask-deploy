@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+waitress = "*"
+flask-cors = "*"
+flask-pymongo = "*"
+pymongo = {extras = ["srv"], version = "*"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+start = "waitress-serve --host 127.0.0.1 app:app"

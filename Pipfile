@@ -9,6 +9,7 @@ waitress = "*"
 flask-cors = "*"
 flask-pymongo = "*"
 pymongo = {extras = ["srv"], version = "*"}
+gunicorn = "*"
 
 [dev-packages]
 
